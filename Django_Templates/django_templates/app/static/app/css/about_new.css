@@ -1,22 +1,30 @@
 *{
     margin: 0;
-    zoom: 
+    zoom: 100%;    
     padding: 0;
     font-family: "Open Sans",sans-serif;
     box-sizing: border-box;
 }
 
+header{ 
+  min-height:50px;
+  background:lightcyan; 
+}
+
 body{
     min-height: 100vh;
-    display: flex;
+    display: grid;
+    height:100vh;
     align-items: center;
-    justify-content: center;
+    
+    margin: 0;    
+    grid-template-rows: auto 1fr auto;
     background-color: #f1f1f1;
 }
 
 .about-section{
-    background: url("../css/pic.jpg") no-repeat left;
-    background-size: 60%;
+    background: url("../img/pic.jpg") no-repeat left;
+    background-size: 80%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
@@ -66,12 +74,19 @@ body{
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:1000px){
     .about-section{
         padding: 0;
     }
     .inner-container{
         padding: 60px;
     }
+}
+
+footer{ 
+  min-height:100px; 
+  background:rgb(77, 77, 77);
+  min-height:50px;
+  margin-top:auto; 
 }
 
