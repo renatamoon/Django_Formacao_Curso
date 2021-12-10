@@ -15,16 +15,15 @@ body{
     min-height: 100vh;
     display: grid;
     height:100vh;
-    align-items: center;
-    
+    align-items: center;    
     margin: 0;    
     grid-template-rows: auto 1fr auto;
     background-color: #f1f1f1;
 }
 
 .about-section{
-    background: url("../img/pic.jpg") no-repeat left;
-    background-size: 80%;
+    background: url("../img/pic.png") no-repeat left;
+    background-size: 40%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
