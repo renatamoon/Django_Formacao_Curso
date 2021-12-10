@@ -13,12 +13,19 @@ def index(request):
         "email": "clinicapet@clinicasp.com.br",
     }
 
-    return render(request, 'empresa/index.html', {'nome_da_empresa': nome_da_empresa, 'descricao_da_empresa': descricao_da_empresa, 'contato_empresa': contato_empresa})
+    cursos_home = {
+        "1": {"titulo": "Nossos Serviços", "descricao": "Nossos serviços de clínica vão desde de hemogramas, atendimento especializado com nosso melhores médicos veterinários, atendimento psicológico, fisioterapia integrada, espaço pet para o seu bichinho quando estiver nas nossas dependências."},
+        "2": {"titulo": "Espaço Pet", "descricao": "O Espaço Pet, uma área exclusiva para cães e gatos, está ganhando cada vez mais destaque nos condomínios residenciais paulistanos. ... Essas áreas dedicadas aos animaizinhos contam com nomes variados, podendo ser chamadas."},
+        "3": {"titulo": "Vacinação", "descricao": "Proteger o seu pet contra doenças infecciosas. Vaciná-lo irá permitir que ele permaneça saudável! Proteger as pessoas contra os agentes circulantes dessas doenças. A vacinação previne o contágio de um animal para o outro, ou mesmo para as pessoas."},
+
+    }
+
+    return render(request, 'empresa/index.html', {'nome_da_empresa': nome_da_empresa, 'descricao_da_empresa': descricao_da_empresa, 'contato_empresa': contato_empresa, 'cursos_home':cursos_home})
 
 
 
 def sobre(request):
-    return HttpResponse("Página sobre")
+    return render(request, 'empresa/about.html')
 
 
 def servicos(request):
