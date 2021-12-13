@@ -5,16 +5,23 @@ Listagem de cliente
 {% endblock title %}
 
 {% block content %}
+
 <div class="card">
     <div class="card-header">
-        Dados do cliente
-    </div>
+       <h3><b>DADOS DO CLIENTE</b></h3>
+    </div>   
     <div class="card-body">
-        <h5 class="card-title">Nome: {{cliente.nome}}</h5>
-        <h5 class="card-title">Sexo: {{cliente.sexo}}</h5>
-        <h5 class="card-title">Data de Nascimento: {{cliente.data_nascimento}}</h5>
-        <h5 class="card-title">Email: {{cliente.email}}</h5>
-        <h5 class="card-title">Profissão: {{cliente.profissao}}</h5>
+        <h5 class="card-title"><b>NOME:</b> {{ cliente.nome }}</h5>
+        <h5 class="card-title"><b>SEXO: </b>{{ cliente.get_sexo_display }}</h5>
+        <h5 class="card-title"><b>DATA DE NASCIMENTO:</b> {{ cliente.data_nascimento }}</h5>
+        <h5 class="card-title"><b>E-MAIL: </b>{{ cliente.email }}</h5>
+        <h5 class="card-title"><b>PROFISSÃO: </b>{{ cliente.profissao }}</h5>
+        <hr>
+        <h5 class="card-title"><b>RUA: </b>{{cliente.endereco.rua}}, {{cliente.endereco.numero}}</h5>
+        <h5 class="card-title"><b>COMPLEMENTO: </b>{{cliente.endereco.complemento}}</h5>
+        <h5 class="card-title"><b>BAIRRO: </b>{{cliente.endereco.bairro}}</h5>
+        <h5 class="card-title"><b>CIDADE: </b>{{cliente.endereco.cidade}}</h5>
+        <h5 class="card-title"><b>PAÍS: </b>{{cliente.endereco.pais}}</h5>
     </div>
 </div>
 

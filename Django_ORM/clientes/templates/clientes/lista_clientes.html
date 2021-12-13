@@ -8,10 +8,12 @@ Listagem de clientes
     <table class="table">
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Data de Nascimento</th>
-                <th>Profissao</th>
-                <th>Ações</th>
+                <th>NOME</th>
+                <th>DATA DE NASCIMENTO</th>
+                <th>PROFISSÃO</th>
+                <th>BAIRRO</th>
+                <th>CIDADE</th>
+                <th>AÇÕES</th>
             </tr>
         </thead>
         <tbody>
@@ -20,8 +22,11 @@ Listagem de clientes
                 <td><a href="{% url 'listar_cliente_id' i.id %}">{{i.nome|safe}}</a></td>
                 <td>{{i.data_nascimento | date:"d M Y"}}</td>
                 <td>{{i.profissao|safe}}</td>
+                <td>{{i.endereco.bairro|safe}}</td>
+                <td>{{i.endereco.cidade|safe}}</td>
                 <td>
                     <a href="{% url 'editar_cliente' i.id %}">Editar</a>
+                    </h5>|</h5>
                     <a href="{% url 'remover_cliente' i.id %}">Remover</a>
                 </td>
             </tr>
