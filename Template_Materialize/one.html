@@ -15,9 +15,9 @@
         ul.menu_side{
             padding-top: 7px;
         }
-
-        a.brand-logo{
-            margin-left: 30px;
+        
+        #logo_apple{
+            margin-top: 2px;
         }
 
         #a_email{
@@ -60,13 +60,15 @@
         }
 
         #signin_text{
-            margin-left: 30px;
+            margin-left: 10px;
             margin-bottom: 10px;
         }
 
         #card_id{
-            width: 450px; 
-            margin-top: 25px;
+            width: 400px; 
+            margin-top: 20px;
+            border-radius: 10px;
+            
         }
 
         .card-content{
@@ -77,6 +79,18 @@
             font-size: 18px ;font-weight: bold
         }
 
+        nav.nav_center_first ul {
+            text-align: center;
+        }
+        nav.nav-center ul li {
+            display: inline;
+            float: none;
+            
+        }
+        nav.nav-center ul li a {
+            display: inline-block;
+            padding-left: 3.5em;
+        }
         
         </style>    
         
@@ -84,10 +98,11 @@
 <body>
 
     <!--start Nav bar--> 
-    <nav class="grey darken-3" role="navigation">
-        <div class="nav-wrapper">
-            <a href="" class="brand-logo"><i class="material-icons">apple</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <nav class="nav-center grey darken-3" id ="nav_center_first" role="navigation">
+        <div class="nav-wrapper container">            
+            <a href="" id="logo_apple" class="brand-logo"><i class="material-icons">apple</i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>                                    
+            <ul id="nav-center" class="center hide-on-med-and-down">
                 <li><a href="">Store</a></li>
                 <li><a href="">Mac</a></li>
                 <li><a href="">iPad</a></li>
@@ -97,9 +112,10 @@
                 <li><a href="">Music</a></li>
                 <li><a href="">Support</a></li>
                 <li><a href="">
-                    <i class="material-icons" id="first_icon">search</i></a></li>
-                <li><a href=""><i class="material-icons" id="first_icon">shop</i></a></li>
+                    <i class="material-icons" id="first_icon">search</i></a></li>                    
+                <li><a href=""><i class="material-icons" id="first_icon">shop</i></a></li>                
             </ul>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">search</i></a>
         </div>
     </nav>
    
