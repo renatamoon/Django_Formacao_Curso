@@ -11,10 +11,9 @@
         <title>Template Materialize</title>
 
         <style>
-
-        *{
-            font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-                       
+        
+        html{            
+            font-family: 'SF Pro Display', sans-serif;            
         }
         
         ul.menu_side{            
@@ -47,7 +46,7 @@
             font-weight: bold;
         }
 
-        .row{
+        #row_perfil{
             padding-top: 30px; 
             padding-bottom: 40px;
         }
@@ -72,7 +71,7 @@
 
         #card_id{            
             width: 400px;
-            box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2); 
+            box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.2); 
             margin-top: 20px;
             border-radius: 10px;
             
@@ -89,6 +88,7 @@
         nav.nav_center_first ul {
             text-align: center;            
         }
+        
         nav.nav-center ul li {            
             display: inline;
             float: none;
@@ -137,8 +137,8 @@
         </style>    
         
     </head>    
-<body>
-
+<body> 
+    
     <!--start Nav bar--> 
     <nav class="nav-center black" id ="nav_center_first" role="navigation">
         <div class="nav-wrapper container">            
@@ -161,21 +161,20 @@
         </div>
     </nav>   
    
-    <nav class="white" role="navigation" style="box-shadow: 0 2px 1px 0 rgba(221, 221, 221, 0.2);"> 
+    <nav class="white" role="navigation" style="box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.2);"> 
         <div class="nav-wrapper">
             <a href="" id="a_brand_logo"><b>Apple ID</b></a>            
             <ul class="right" style="margin-right: 15px;"> 
                 <li><a href="#" class="right sidenav-trigger"><i class="material-icons" id="side_na_trigger_expand" >expand_more</i></a></li>               
                 <li><a href="">                 
                 <button class="button">Sign Out</button>
-                 </a></li>
-                                               
+                 </a></li>                                               
             </ul>
         </div>        
     </nav>
     <!--End Nav bar-->   
 
-<div class="row">
+<div class="row" id="row_perfil">
     <div class="col s12 m12 l3">
         <div class="column">
             <div id="inner">
@@ -220,16 +219,9 @@
                     <i class="material-icons icon-blue" style="float: right;" id="first_icon">apple</i>                                         
                     <span class="card-title" id="span_text">Apple ID</span>                    
                     <p style="color: gray;">luisandrade@mac.com</p>
-                    </div>                                       
+                    </div>
+                                       
                 </div>
-
-                <div class="card" id="card_id">                                      
-                <div class="card-content">
-                    <i class="material-icons icon-blue" style="float: right;" id="first_icon">settings_ethernet</i>
-                    <span class="card-title" id="span_text">Password</span>
-                    <p style="color: gray;">Last updated December 16, 2017</p>
-                </div>                   
-            </div>  
            
             <div class="card" id="card_id" >                                      
                     <div class="card-content">
@@ -239,15 +231,6 @@
                     <p style="color: gray;">1 trusted phone number</p>
                     </div>                   
                 </div>
-
-                <div class="card" id="card_id">                                      
-                    <div class="card-content">
-                    <i class="material-icons icon-blue" style="float: right;" id="first_icon">notifications_none</i>
-                    <span class="card-title" id="span_text">Notification Email</span>
-                    <p style="color: gray;">luisandrade@outlook.com.br</p>
-                    </div>                   
-                </div>
-
             <div class="card" id="card_id" >                                      
                     <div class="card-content">
                     <i class="material-icons icon-blue" style="float: right;" id="first_icon">settings_input_svideo</i>
@@ -255,15 +238,6 @@
                     <p style="color: gray;">iCloud Data Recovery Service</p>
                     </div>                   
                 </div>
-
-            <div class="card" id="card_id">                                      
-                    <div class="card-content">
-                        <i class="material-icons icon-blue" style="float: right;" id="first_icon">web</i>
-                    <span class="card-title" id="span_text">Sign in with Apple</span>
-                    <p style="color: gray;">View details</p>
-                    </div>
-            </div> 
-
             <div class="card" id="card_id" >                                      
                     <div class="card-content">
                     <i class="material-icons icon-blue" style="float: right;" id="first_icon">grain</i>
@@ -271,6 +245,29 @@
                     <p style="color: gray;">View details</p>
                     </div>                   
                 </div>
+    </div> 
+    
+  <div class="col s12 m12 l4">
+            <div class="card" id="card_id">                                      
+                <div class="card-content">
+                    <i class="material-icons icon-blue" style="float: right;" id="first_icon">settings_ethernet</i>
+                    <span class="card-title" id="span_text">Password</span>
+                    <p style="color: gray;">Last updated December 16, 2017</p>
+                </div>                   
+            </div>           
+            <div class="card" id="card_id">                                      
+                    <div class="card-content">
+                    <i class="material-icons icon-blue" style="float: right;" id="first_icon">notifications_none</i>
+                    <span class="card-title" id="span_text">Notification Email</span>
+                    <p style="color: gray;">luisandrade@outlook.com.br</p>
+                    </div>                   
+                </div>
+            <div class="card" id="card_id">                                      
+                    <div class="card-content">
+                        <i class="material-icons icon-blue" style="float: right;" id="first_icon">web</i>
+                    <span class="card-title" id="span_text">Sign in with Apple</span>
+                    <p style="color: gray;">View details</p>
+            </div> 
     </div> 
 
     
