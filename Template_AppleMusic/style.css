@@ -1,5 +1,6 @@
 *{
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    box-sizing: border-box;
     }
 
 body{
@@ -13,7 +14,7 @@ body{
     font-family: "SF Pro Text";
     width: 350px;    
     left: 50%;
-    height: 90%;
+    height: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -115,14 +116,26 @@ ul{
     font-weight: bold;
 }
 
-.column {
-  float: center;
-  width: 25%;
-  padding: 0 10px;
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 1px 8px 0 rgba(181, 181, 181, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  background-color: #f1f1f1;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin-right: 70px;
+  
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -131,23 +144,17 @@ ul{
   clear: both;
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 1px 8px 0 rgba(181, 181, 181, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  margin-left: 12px;
-  margin-bottom: 12px;
-  background-color: #f1f1f1;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
   }
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+
